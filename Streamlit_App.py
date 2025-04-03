@@ -3,11 +3,8 @@ import joblib
 import numpy as np
 
 
-try:
-    model = joblib.load("Temperature_Prediction_Model.pkl")
-    print("Model loaded successfully.")
-except Exception as e:
-    print(f"Error loading model: {e}")
+model = joblib.load("Temperature_Prediction_Model.pkl")
+
 
 
 # Streamlit UI
