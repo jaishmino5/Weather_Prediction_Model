@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load trained model
-model = joblib.load(r"C:\Users\sonia\Downloads\xgb_temperature_model.pkl")
+model = joblib.load("")
 
 # Streamlit UI
 st.title("Temperature Prediction App")
