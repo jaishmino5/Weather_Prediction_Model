@@ -2,9 +2,12 @@ import streamlit as st
 import joblib
 import numpy as np
 
+import pickle
 
-import os
-model = joblib.load(os.path.join(os.path.dirname(__file__), "Temperature_Prediction_Model.pkl"))
+# Load the model
+with open("temperature_model.pkl", "rb") as f:
+    model = pickle.load(f)
+
 
 
 
