@@ -2,8 +2,13 @@ import streamlit as st
 import joblib
 import numpy as np
 
-# Load trained model
-model = joblib.load("Temperature_Prediction_Model.pkl")
+
+try:
+    model = joblib.load("Temperature_Prediction_Model.pkl")
+    print("Model loaded successfully.")
+except Exception as e:
+    print(f"Error loading model: {e}")
+
 
 # Streamlit UI
 st.title("Temperature Prediction App")
