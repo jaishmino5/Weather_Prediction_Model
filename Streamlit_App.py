@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load trained model
-model = joblib.load("")
+model = joblib.load("Temperature_Prediction_Model")
 
 # Streamlit UI
 st.title("Temperature Prediction App")
