@@ -3,7 +3,8 @@ import joblib
 import numpy as np
 
 
-model = joblib.load("Temperature_Prediction_Model.pkl")
+import os
+model = joblib.load(os.path.join(os.path.dirname(__file__), "Temperature_Prediction_Model.pkl"))
 
 
 
